@@ -108,7 +108,7 @@ section .title::after{
 }
 .navbar .logo a{
     color: #8fa9ce;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 600;
     filter: brightness(120%);
 }
@@ -126,7 +126,7 @@ section .title::after{
 .navbar .menu li a{
     display: block;
     color: #bfa413;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
     margin-left: 25px;
     transition: color 0.3s ease;
@@ -225,22 +225,29 @@ section .title::after{
   background-color: black;
 }
 .recent .about-content .into .clearfix{
-  width: 200px;
+  width: 150px;
   height: 50px;
-  color: white;
-  background-color: crimson;
   float: right;
   margin-top:10px;
+
 }
-.recent .about-content .into .clearfix .btclass{
+.recent .about-content .into .clearfix a{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  justify-items: center;
-  padding-top: 13px;
+  color: white;
+  background-color: crimson;
   color: white;
   font-family: Montserrat,sans-serif;
   text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+
+}
+.recent .about-content .into .clearfix a:hover{
+  background-color: white;
+  color: #61646c;
 
 
 }
@@ -261,7 +268,7 @@ section .title::after{
   text-align: left;
 }
 .about .about-content{
-  margin-top: -9%;
+  margin-top: -6%;
 }
 .about .about-content .left{
      top:-50px;
@@ -770,16 +777,17 @@ section .title::after{
     }
     .navbar .menu{
        position: fixed;
-       height: 40vh;
+       height: 25vh;
        width: 100%;
-       top: 10%;
+       top: 8%;
        left: -100%;
        background: #575866;
        text-align: left;
        color: black;
        padding-left: 30px;
-       padding-top: 40px;
+       padding-top: 20px;
        transition: all 0.3s ease;
+       bottom: 10px;
     }
     .navbar .menu.active{
        left: 0;
@@ -790,7 +798,8 @@ section .title::after{
     .navbar .menu li a{
        display: inline-block;
        margin: 5px 0;
-       font-size: 20px;
+       font-size: 15px;
+       color: white;
     }
     .home .home-content .text-2{
         font-size: 30px;
@@ -805,6 +814,12 @@ section .title::after{
         margin: 0 auto 40px;
         font-size: 20px;
 
+    }
+    .about .about-content .left img{
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 6px;
     }
     .about .about-content .right .text,
     .skills .skills-content .left .text{
