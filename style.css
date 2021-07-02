@@ -94,8 +94,6 @@ section .title::after{
     padding: 20px 0;
     font-family: 'Montserrat', sans-serif;
     transition: all 0.3s ease;
-
-
 }
 .navbar.sticky{
     padding: 15px 0;
@@ -675,10 +673,12 @@ section .title::after{
         z-index: 999;
         color: white;
         content: "menu";
+
     }
     .menu-btn i.active:before{
         content: "\f00d";
         color: white;
+
     }
     .navbar .menu{
         position: fixed;
@@ -688,7 +688,6 @@ section .title::after{
         left: -100%;
         background: #575866;
         text-align: left;
-        color: black;
         padding-left: 30px;
         padding-top: 40px;
         transition: all 0.3s ease;
@@ -765,6 +764,25 @@ section .title::after{
 }
 
 @media (max-width: 500px) {
+  .navbar{
+    background-color: #575866;
+  }
+  .navbar .logo a{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    filter: brightness(120%);
+  }
+  .navbar .logo a span{
+    color: white;
+    transition: all 0.3s ease;
+  }
+  .navbar .max-width .logo{
+    align-items: center;
+    justify-content: center;
+    
+  }
+
     .menu-btn{
        display: block;
        z-index: 999;
@@ -777,7 +795,7 @@ section .title::after{
     }
     .navbar .menu{
        position: fixed;
-       height: 25vh;
+       height: 29vh;
        width: 100%;
        top: 8%;
        left: -100%;
